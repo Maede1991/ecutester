@@ -30,7 +30,7 @@ class Ui_MainWindow(object):
 "")
         self.groupBox = QGroupBox(self.centralwidget)
         self.groupBox.setObjectName(u"groupBox")
-        self.groupBox.setGeometry(QRect(30, 750, 681, 91))
+        self.groupBox.setGeometry(QRect(30, 730, 791, 101))
         self.groupBox.setStyleSheet(u"font: 75 14pt \"Comic Sans MS\";\n"
 "color:rgb(250, 250, 250)")
         self.label_2 = QLabel(self.groupBox)
@@ -64,6 +64,29 @@ class Ui_MainWindow(object):
         self.btnConnect.setGeometry(QRect(499, 33, 121, 41))
         self.btnConnect.setCursor(QCursor(Qt.PointingHandCursor))
         self.btnConnect.setStyleSheet(u"QPushButton{\n"
+"background-color: rgb(0, 54, 69);\n"
+"   border-radius: 10px;\n"
+"border-color: rgb(255, 85, 255);\n"
+"color: rgb(255, 255, 255);\n"
+"font: 10pt \"Comic Sans MS\";\n"
+"}\n"
+"\n"
+"QPushButton::hover\n"
+"{\n"
+"border:0px;\n"
+"	\n"
+"	background-color: rgb(0, 121, 131);\n"
+"}\n"
+"QPushButton:pressed\n"
+"{\n"
+"border:1px solid rgb(0, 121, 131);\n"
+"background-color: rgb(179,250, 250);\n"
+"}")
+        self.btndisconnect = QPushButton(self.groupBox)
+        self.btndisconnect.setObjectName(u"btndisconnect")
+        self.btndisconnect.setGeometry(QRect(650, 33, 121, 41))
+        self.btndisconnect.setCursor(QCursor(Qt.PointingHandCursor))
+        self.btndisconnect.setStyleSheet(u"QPushButton{\n"
 "background-color: rgb(0, 54, 69);\n"
 "   border-radius: 10px;\n"
 "border-color: rgb(255, 85, 255);\n"
@@ -1057,6 +1080,7 @@ class Ui_MainWindow(object):
         self.comboBoxBuadRate.setItemText(2, QCoreApplication.translate("MainWindow", u"115200", None))
 
         self.btnConnect.setText(QCoreApplication.translate("MainWindow", u"Connect", None))
+        self.btndisconnect.setText(QCoreApplication.translate("MainWindow", u"Disconnect", None))
         self.groupBox_5.setTitle(QCoreApplication.translate("MainWindow", u"Analog Data", None))
         self.groupBox_12.setTitle(QCoreApplication.translate("MainWindow", u"RPM", None))
         self.lineEditRPM.setText(QCoreApplication.translate("MainWindow", u"None", None))
