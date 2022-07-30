@@ -290,7 +290,7 @@ border:0px;
 }</string>
       </property>
       <property name="text">
-       <string>0XFF</string>
+       <string>None</string>
       </property>
       <property name="echoMode">
        <enum>QLineEdit::Normal</enum>
@@ -352,7 +352,7 @@ border:0px;
 }</string>
       </property>
       <property name="text">
-       <string>0XFF</string>
+       <string>None</string>
       </property>
       <property name="echoMode">
        <enum>QLineEdit::Normal</enum>
@@ -458,7 +458,7 @@ border:0px;
 }</string>
       </property>
       <property name="text">
-       <string>0XFF</string>
+       <string>None</string>
       </property>
       <property name="echoMode">
        <enum>QLineEdit::Normal</enum>
@@ -545,7 +545,7 @@ border:0px;
 }</string>
       </property>
       <property name="text">
-       <string>0XFF</string>
+       <string>None</string>
       </property>
       <property name="echoMode">
        <enum>QLineEdit::Normal</enum>
@@ -632,7 +632,7 @@ border:0px;
 }</string>
       </property>
       <property name="text">
-       <string>0XFF</string>
+       <string>None</string>
       </property>
       <property name="echoMode">
        <enum>QLineEdit::Normal</enum>
@@ -719,7 +719,7 @@ border:0px;
 }</string>
       </property>
       <property name="text">
-       <string>0xff</string>
+       <string>None</string>
       </property>
       <property name="echoMode">
        <enum>QLineEdit::Normal</enum>
@@ -806,7 +806,7 @@ border:0px;
 }</string>
       </property>
       <property name="text">
-       <string>0XFF</string>
+       <string>None</string>
       </property>
       <property name="echoMode">
        <enum>QLineEdit::Normal</enum>
@@ -893,7 +893,7 @@ border:0px;
 }</string>
       </property>
       <property name="text">
-       <string>0XFF</string>
+       <string>None</string>
       </property>
       <property name="echoMode">
        <enum>QLineEdit::Normal</enum>
@@ -980,7 +980,7 @@ border:0px;
 }</string>
       </property>
       <property name="text">
-       <string>0XFF</string>
+       <string>None</string>
       </property>
       <property name="echoMode">
        <enum>QLineEdit::Normal</enum>
@@ -1067,7 +1067,7 @@ border:0px;
 }</string>
       </property>
       <property name="text">
-       <string>0xff</string>
+       <string>None</string>
       </property>
       <property name="echoMode">
        <enum>QLineEdit::Normal</enum>
@@ -1154,7 +1154,7 @@ border:0px;
 }</string>
       </property>
       <property name="text">
-       <string>0XFF</string>
+       <string>None</string>
       </property>
       <property name="echoMode">
        <enum>QLineEdit::Normal</enum>
@@ -1241,7 +1241,7 @@ border:0px;
 }</string>
       </property>
       <property name="text">
-       <string>0XFF</string>
+       <string>None</string>
       </property>
       <property name="echoMode">
        <enum>QLineEdit::Normal</enum>
@@ -1328,7 +1328,7 @@ border:0px;
 }</string>
       </property>
       <property name="text">
-       <string>0XFF</string>
+       <string>None</string>
       </property>
       <property name="echoMode">
        <enum>QLineEdit::Normal</enum>
@@ -1415,7 +1415,7 @@ border:0px;
 }</string>
       </property>
       <property name="text">
-       <string>0XFF</string>
+       <string>None</string>
       </property>
       <property name="echoMode">
        <enum>QLineEdit::Normal</enum>
@@ -1463,526 +1463,39 @@ color: rgb(255, 255, 255);</string>
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QWidget" name="layoutWidget">
+   <widget class="QGroupBox" name="groupBox_14">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>530</y>
-      <width>1271</width>
-      <height>201</height>
+      <x>871</x>
+      <y>531</y>
+      <width>419</width>
+      <height>199</height>
      </rect>
     </property>
-    <layout class="QHBoxLayout" name="horizontalLayout_2">
-     <item>
-      <widget class="QGroupBox" name="groupBox_7">
-       <property name="cursor">
-        <cursorShape>ForbiddenCursor</cursorShape>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QPushButton {
-                                        border-radius: 10px;
-                                       selection-background-color: darkgray;
-color: rgb(0, 0, 0);
-font: 10pt &quot;Comic Sans MS&quot;;
-
-	background-color: rgb(250, 250, 250);
-
-border-color: rgb(255, 85, 255);
-
-}
-
-QPushButton::hover
-{
-border:0px;
-	
-	background-color: rgb(0, 134, 144);
-}
-QPushButton::pressed
-{
-border:10px;
-	
-}</string>
-       </property>
-       <property name="title">
-        <string>ActuatorData</string>
-       </property>
-       <widget class="QPushButton" name="btnFANHIGH">
-        <property name="geometry">
-         <rect>
-          <x>30</x>
-          <y>30</y>
-          <width>105</width>
-          <height>33</height>
-         </rect>
-        </property>
-        <property name="cursor">
-         <cursorShape>PointingHandCursor</cursorShape>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">QPushButton {
-                                        border-radius: 10px;
-                                       selection-background-color: darkgray;
-color: rgb(0, 0, 0);
-font: 10pt &quot;Comic Sans MS&quot;;
-
-	background-color: rgb(250, 250, 250);
-
-border-color: rgb(255, 85, 255);
-
-}
-
-QPushButton::hover
-{
-border:0px;
-	
-	background-color: rgb(0, 134, 144);
-}
-QPushButton:pressed
-{
-border:1px solid rgb(0, 121, 131);
-background-color: rgb(179,250, 250);
-}</string>
-        </property>
-        <property name="text">
-         <string>FanHigh</string>
-        </property>
-       </widget>
-       <widget class="QCheckBox" name="checkBoxFanHigh">
-        <property name="geometry">
-         <rect>
-          <x>150</x>
-          <y>30</y>
-          <width>104</width>
-          <height>28</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-       <widget class="QCheckBox" name="checkBoxFanLow">
-        <property name="geometry">
-         <rect>
-          <x>150</x>
-          <y>70</y>
-          <width>104</width>
-          <height>28</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="btnFANLOW">
-        <property name="geometry">
-         <rect>
-          <x>30</x>
-          <y>70</y>
-          <width>105</width>
-          <height>33</height>
-         </rect>
-        </property>
-        <property name="cursor">
-         <cursorShape>PointingHandCursor</cursorShape>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">QPushButton {
-                                        border-radius: 10px;
-                                       selection-background-color: darkgray;
-color: rgb(0, 0, 0);
-font: 10pt &quot;Comic Sans MS&quot;;
-
-	background-color: rgb(250, 250, 250);
-
-border-color: rgb(255, 85, 255);
-
-}
-
-QPushButton::hover
-{
-border:0px;
-	
-	background-color: rgb(0, 134, 144);
-}
-QPushButton:pressed
-{
-border:1px solid rgb(0, 121, 131);
-background-color: rgb(179,250, 250);
-}</string>
-        </property>
-        <property name="text">
-         <string>FanLow</string>
-        </property>
-       </widget>
-       <widget class="QCheckBox" name="checkBoxAC">
-        <property name="geometry">
-         <rect>
-          <x>150</x>
-          <y>110</y>
-          <width>104</width>
-          <height>28</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="btnAC">
-        <property name="geometry">
-         <rect>
-          <x>30</x>
-          <y>110</y>
-          <width>105</width>
-          <height>33</height>
-         </rect>
-        </property>
-        <property name="cursor">
-         <cursorShape>PointingHandCursor</cursorShape>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">QPushButton {
-                                        border-radius: 10px;
-                                       selection-background-color: darkgray;
-color: rgb(0, 0, 0);
-font: 10pt &quot;Comic Sans MS&quot;;
-
-	background-color: rgb(250, 250, 250);
-
-border-color: rgb(255, 85, 255);
-
-}
-
-QPushButton::hover
-{
-border:0px;
-	
-	background-color: rgb(0, 134, 144);
-}
-QPushButton:pressed
-{
-border:1px solid rgb(0, 121, 131);
-background-color: rgb(179,250, 250);
-}</string>
-        </property>
-        <property name="text">
-         <string>AC Compressor</string>
-        </property>
-       </widget>
-       <widget class="QCheckBox" name="checkBoxFuelPump">
-        <property name="geometry">
-         <rect>
-          <x>150</x>
-          <y>150</y>
-          <width>104</width>
-          <height>28</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="btnFUELPUMP">
-        <property name="geometry">
-         <rect>
-          <x>30</x>
-          <y>150</y>
-          <width>105</width>
-          <height>33</height>
-         </rect>
-        </property>
-        <property name="cursor">
-         <cursorShape>PointingHandCursor</cursorShape>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">QPushButton {
-                                        border-radius: 10px;
-                                       selection-background-color: darkgray;
-color: rgb(0, 0, 0);
-font: 10pt &quot;Comic Sans MS&quot;;
-
-	background-color: rgb(250, 250, 250);
-
-border-color: rgb(255, 85, 255);
-
-}
-
-QPushButton::hover
-{
-border:0px;
-	
-	background-color: rgb(0, 134, 144);
-}
-QPushButton:pressed
-{
-border:1px solid rgb(0, 121, 131);
-background-color: rgb(179,250, 250);
-}</string>
-        </property>
-        <property name="text">
-         <string>FuelPump</string>
-        </property>
-       </widget>
-      </widget>
-     </item>
-     <item>
-      <widget class="QGroupBox" name="groupBox_15">
-       <property name="styleSheet">
-        <string notr="true">QPushButton {
-
-
-color: rgb(0, 0, 0);
-font: 10pt &quot;Comic Sans MS&quot;;
-
-	background-color: rgb(250, 250, 250);
-
-border-color: rgb(255, 85, 255);
-
-}
-
-QPushButton::hover
-{
-border:0px;
-	
-	
-	background-color: rgb(0, 243, 244);
-}</string>
-       </property>
-       <property name="title">
-        <string>Digital Data</string>
-       </property>
-       <widget class="QPushButton" name="btnBrakeTest">
-        <property name="geometry">
-         <rect>
-          <x>80</x>
-          <y>130</y>
-          <width>111</width>
-          <height>33</height>
-         </rect>
-        </property>
-        <property name="cursor">
-         <cursorShape>PointingHandCursor</cursorShape>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">QPushButton {
-                                        border-radius: 10px;
-                                       selection-background-color: darkgray;
-color: rgb(0, 0, 0);
-font: 10pt &quot;Comic Sans MS&quot;;
-
-	background-color: rgb(250, 250, 250);
-
-border-color: rgb(255, 85, 255);
-
-}
-
-QPushButton::hover
-{
-border:0px;
-	
-	background-color: rgb(0, 134, 144);
-}
-QPushButton:pressed
-{
-border:1px solid rgb(0, 121, 131);
-background-color: rgb(179,250, 250);
-}</string>
-        </property>
-        <property name="text">
-         <string>BrakeTestSwitch</string>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="btnACSwitch2">
-        <property name="geometry">
-         <rect>
-          <x>246</x>
-          <y>80</y>
-          <width>105</width>
-          <height>33</height>
-         </rect>
-        </property>
-        <property name="cursor">
-         <cursorShape>PointingHandCursor</cursorShape>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">QPushButton {
-                                        border-radius: 10px;
-                                       selection-background-color: darkgray;
-color: rgb(0, 0, 0);
-font: 10pt &quot;Comic Sans MS&quot;;
-
-	background-color: rgb(250, 250, 250);
-
-border-color: rgb(255, 85, 255);
-
-}
-
-QPushButton::hover
-{
-border:0px;
-	
-	background-color: rgb(0, 134, 144);
-}
-QPushButton:pressed
-{
-border:1px solid rgb(0, 121, 131);
-background-color: rgb(179,250, 250);
-}</string>
-        </property>
-        <property name="text">
-         <string>AC SWITCH 2</string>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="btnACSwitch1">
-        <property name="geometry">
-         <rect>
-          <x>136</x>
-          <y>80</y>
-          <width>105</width>
-          <height>33</height>
-         </rect>
-        </property>
-        <property name="cursor">
-         <cursorShape>PointingHandCursor</cursorShape>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">QPushButton {
-                                        border-radius: 10px;
-                                       selection-background-color: darkgray;
-color: rgb(0, 0, 0);
-font: 10pt &quot;Comic Sans MS&quot;;
-
-	background-color: rgb(250, 250, 250);
-
-border-color: rgb(255, 85, 255);
-
-}
-
-QPushButton::hover
-{
-border:0px;
-	
-	background-color: rgb(0, 134, 144);
-}
-QPushButton:pressed
-{
-border:1px solid rgb(0, 121, 131);
-background-color: rgb(179,250, 250);
-}</string>
-        </property>
-        <property name="text">
-         <string>AC SWITCH 1</string>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="btnPSV">
-        <property name="geometry">
-         <rect>
-          <x>206</x>
-          <y>130</y>
-          <width>105</width>
-          <height>33</height>
-         </rect>
-        </property>
-        <property name="cursor">
-         <cursorShape>PointingHandCursor</cursorShape>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">QPushButton {
-                                        border-radius: 10px;
-                                       selection-background-color: darkgray;
-color: rgb(0, 0, 0);
-font: 10pt &quot;Comic Sans MS&quot;;
-
-	background-color: rgb(250, 250, 250);
-
-border-color: rgb(255, 85, 255);
-
-}
-
-QPushButton::hover
-{
-border:0px;
-	
-	background-color: rgb(0, 134, 144);
-}
-QPushButton:pressed
-{
-border:1px solid rgb(0, 121, 131);
-background-color: rgb(179,250, 250);
-}</string>
-        </property>
-        <property name="text">
-         <string>PSV</string>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="btnCluch">
-        <property name="geometry">
-         <rect>
-          <x>26</x>
-          <y>80</y>
-          <width>105</width>
-          <height>33</height>
-         </rect>
-        </property>
-        <property name="cursor">
-         <cursorShape>PointingHandCursor</cursorShape>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">QPushButton {
-                                        border-radius: 10px;
-                                       selection-background-color: darkgray;
-color: rgb(0, 0, 0);
-font: 10pt &quot;Comic Sans MS&quot;;
-
-	background-color: rgb(250, 250, 250);
-
-border-color: rgb(255, 85, 255);
-
-}
-
-QPushButton::hover
-{
-border:0px;
-	
-	background-color: rgb(0, 134, 144);
-}
-QPushButton:pressed
-{
-border:1px solid rgb(0, 121, 131);
-background-color: rgb(179,250, 250);
-}</string>
-        </property>
-        <property name="text">
-         <string>Clutch</string>
-        </property>
-       </widget>
-      </widget>
-     </item>
-     <item>
-      <widget class="QGroupBox" name="groupBox_14">
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">font: 75 14pt &quot;Comic Sans MS&quot;;
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 14pt &quot;Comic Sans MS&quot;;
 color:rgb(250, 250, 250)</string>
-       </property>
-       <property name="title">
-        <string>Power</string>
-       </property>
-       <widget class="QPushButton" name="btnBattery">
-        <property name="geometry">
-         <rect>
-          <x>100</x>
-          <y>50</y>
-          <width>105</width>
-          <height>33</height>
-         </rect>
-        </property>
-        <property name="cursor">
-         <cursorShape>PointingHandCursor</cursorShape>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">QPushButton{
+    </property>
+    <property name="title">
+     <string>Power</string>
+    </property>
+    <widget class="QPushButton" name="btnBattery">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>50</y>
+       <width>105</width>
+       <height>33</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
 background-color: rgb(0, 54, 69);
    border-radius: 10px;
 border-color: rgb(255, 85, 255);
@@ -2001,25 +1514,25 @@ QPushButton:pressed
 border:1px solid rgb(0, 121, 131);
 background-color: rgb(179,250, 250);
 }</string>
-        </property>
-        <property name="text">
-         <string>Battery</string>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="btnSwitch">
-        <property name="geometry">
-         <rect>
-          <x>220</x>
-          <y>50</y>
-          <width>105</width>
-          <height>33</height>
-         </rect>
-        </property>
-        <property name="cursor">
-         <cursorShape>PointingHandCursor</cursorShape>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">QPushButton{
+     </property>
+     <property name="text">
+      <string>Battery</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnSwitch">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>50</y>
+       <width>105</width>
+       <height>33</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
 background-color: rgb(0, 54, 69);
    border-radius: 10px;
 border-color: rgb(255, 85, 255);
@@ -2038,25 +1551,25 @@ QPushButton:pressed
 border:1px solid rgb(0, 121, 131);
 background-color: rgb(179,250, 250);
 }</string>
-        </property>
-        <property name="text">
-         <string>Switch</string>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="btnSendData">
-        <property name="geometry">
-         <rect>
-          <x>100</x>
-          <y>90</y>
-          <width>231</width>
-          <height>91</height>
-         </rect>
-        </property>
-        <property name="cursor">
-         <cursorShape>PointingHandCursor</cursorShape>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">QPushButton{
+     </property>
+     <property name="text">
+      <string>Switch</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnSendData">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>90</y>
+       <width>231</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
 background-color: rgb(0, 54, 69);
    border-radius: 10px;
 border-color: rgb(255, 85, 255);
@@ -2075,57 +1588,487 @@ QPushButton:pressed
 border:1px solid rgb(0, 121, 131);
 	background-color: rgb(179,250, 250);
 }</string>
-        </property>
-        <property name="text">
-         <string>Send Data</string>
-        </property>
-        <property name="autoDefault">
-         <bool>false</bool>
-        </property>
-        <property name="default">
-         <bool>false</bool>
-        </property>
-        <property name="flat">
-         <bool>false</bool>
-        </property>
-       </widget>
-      </widget>
-     </item>
-    </layout>
-    <zorder>groupBox_15</zorder>
-    <zorder>groupBox_14</zorder>
-    <zorder>groupBox_7</zorder>
+     </property>
+     <property name="text">
+      <string>Send Data</string>
+     </property>
+     <property name="autoDefault">
+      <bool>false</bool>
+     </property>
+     <property name="default">
+      <bool>false</bool>
+     </property>
+     <property name="flat">
+      <bool>false</bool>
+     </property>
+    </widget>
    </widget>
-   <widget class="QWidget" name="layoutWidget">
+   <widget class="QGroupBox" name="groupBox_7">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>2</width>
-      <height>2</height>
+      <x>21</x>
+      <y>531</y>
+      <width>419</width>
+      <height>199</height>
      </rect>
     </property>
-    <layout class="QVBoxLayout" name="verticalLayout"/>
+    <property name="cursor">
+     <cursorShape>ForbiddenCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 14pt &quot;Comic Sans MS&quot;;
+color:rgb(250, 250, 250)</string>
+    </property>
+    <property name="title">
+     <string>ActuatorData</string>
+    </property>
+    <widget class="QPushButton" name="btnFANHIGH">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>30</y>
+       <width>105</width>
+       <height>33</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+                                        border-radius: 10px;
+                                       selection-background-color: darkgray;
+color: rgb(0, 0, 0);
+font: 10pt &quot;Comic Sans MS&quot;;
+
+	background-color: rgb(250, 250, 250);
+
+border-color: rgb(255, 85, 255);
+
+}
+
+QPushButton::hover
+{
+border:0px;
+	
+	background-color: rgb(0, 134, 144);
+}
+QPushButton:pressed
+{
+border:1px solid rgb(0, 121, 131);
+background-color: rgb(179,250, 250);
+}</string>
+     </property>
+     <property name="text">
+      <string>FanHigh</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBoxFanHigh">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>30</y>
+       <width>104</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBoxFanLow">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>70</y>
+       <width>104</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnFANLOW">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>70</y>
+       <width>105</width>
+       <height>33</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+                                        border-radius: 10px;
+                                       selection-background-color: darkgray;
+color: rgb(0, 0, 0);
+font: 10pt &quot;Comic Sans MS&quot;;
+
+	background-color: rgb(250, 250, 250);
+
+border-color: rgb(255, 85, 255);
+
+}
+
+QPushButton::hover
+{
+border:0px;
+	
+	background-color: rgb(0, 134, 144);
+}
+QPushButton:pressed
+{
+border:1px solid rgb(0, 121, 131);
+background-color: rgb(179,250, 250);
+}</string>
+     </property>
+     <property name="text">
+      <string>FanLow</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBoxAC">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>110</y>
+       <width>104</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnAC">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>110</y>
+       <width>105</width>
+       <height>33</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+                                        border-radius: 10px;
+                                       selection-background-color: darkgray;
+color: rgb(0, 0, 0);
+font: 10pt &quot;Comic Sans MS&quot;;
+
+	background-color: rgb(250, 250, 250);
+
+border-color: rgb(255, 85, 255);
+
+}
+
+QPushButton::hover
+{
+border:0px;
+	
+	background-color: rgb(0, 134, 144);
+}
+QPushButton:pressed
+{
+border:1px solid rgb(0, 121, 131);
+background-color: rgb(179,250, 250);
+}</string>
+     </property>
+     <property name="text">
+      <string>AC Compressor</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBoxFuelPump">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>150</y>
+       <width>104</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnFUELPUMP">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>150</y>
+       <width>105</width>
+       <height>33</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+                                        border-radius: 10px;
+                                       selection-background-color: darkgray;
+color: rgb(0, 0, 0);
+font: 10pt &quot;Comic Sans MS&quot;;
+
+	background-color: rgb(250, 250, 250);
+
+border-color: rgb(255, 85, 255);
+
+}
+
+QPushButton::hover
+{
+border:0px;
+	
+	background-color: rgb(0, 134, 144);
+}
+QPushButton:pressed
+{
+border:1px solid rgb(0, 121, 131);
+background-color: rgb(179,250, 250);
+}</string>
+     </property>
+     <property name="text">
+      <string>FuelPump</string>
+     </property>
+    </widget>
    </widget>
-   <widget class="QWidget" name="layoutWidget">
+   <widget class="QGroupBox" name="groupBox_15">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>2</width>
-      <height>2</height>
+      <x>446</x>
+      <y>531</y>
+      <width>419</width>
+      <height>199</height>
      </rect>
     </property>
-    <layout class="QVBoxLayout" name="verticalLayout_2"/>
+    <property name="styleSheet">
+     <string notr="true">font: 75 14pt &quot;Comic Sans MS&quot;;
+color:rgb(250, 250, 250)</string>
+    </property>
+    <property name="title">
+     <string>Digital Data</string>
+    </property>
+    <widget class="QPushButton" name="btnBrakeTest">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>130</y>
+       <width>111</width>
+       <height>33</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+                                        border-radius: 10px;
+                                       selection-background-color: darkgray;
+color: rgb(0, 0, 0);
+font: 10pt &quot;Comic Sans MS&quot;;
+
+	background-color: rgb(250, 250, 250);
+
+border-color: rgb(255, 85, 255);
+
+}
+
+QPushButton::hover
+{
+border:0px;
+	
+	background-color: rgb(0, 134, 144);
+}
+QPushButton:pressed
+{
+border:1px solid rgb(0, 121, 131);
+background-color: rgb(179,250, 250);
+}</string>
+     </property>
+     <property name="text">
+      <string>BrakeTestSwitch</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnACSwitch2">
+     <property name="geometry">
+      <rect>
+       <x>246</x>
+       <y>80</y>
+       <width>105</width>
+       <height>33</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+                                        border-radius: 10px;
+                                       selection-background-color: darkgray;
+color: rgb(0, 0, 0);
+font: 10pt &quot;Comic Sans MS&quot;;
+
+	background-color: rgb(250, 250, 250);
+
+border-color: rgb(255, 85, 255);
+
+}
+
+QPushButton::hover
+{
+border:0px;
+	
+	background-color: rgb(0, 134, 144);
+}
+QPushButton:pressed
+{
+border:1px solid rgb(0, 121, 131);
+background-color: rgb(179,250, 250);
+}</string>
+     </property>
+     <property name="text">
+      <string>AC SWITCH 2</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnACSwitch1">
+     <property name="geometry">
+      <rect>
+       <x>136</x>
+       <y>80</y>
+       <width>105</width>
+       <height>33</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+                                        border-radius: 10px;
+                                       selection-background-color: darkgray;
+color: rgb(0, 0, 0);
+font: 10pt &quot;Comic Sans MS&quot;;
+
+	background-color: rgb(250, 250, 250);
+
+border-color: rgb(255, 85, 255);
+
+}
+
+QPushButton::hover
+{
+border:0px;
+	
+	background-color: rgb(0, 134, 144);
+}
+QPushButton:pressed
+{
+border:1px solid rgb(0, 121, 131);
+background-color: rgb(179,250, 250);
+}</string>
+     </property>
+     <property name="text">
+      <string>AC SWITCH 1</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnPSV">
+     <property name="geometry">
+      <rect>
+       <x>206</x>
+       <y>130</y>
+       <width>105</width>
+       <height>33</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+                                        border-radius: 10px;
+                                       selection-background-color: darkgray;
+color: rgb(0, 0, 0);
+font: 10pt &quot;Comic Sans MS&quot;;
+
+	background-color: rgb(250, 250, 250);
+
+border-color: rgb(255, 85, 255);
+
+}
+
+QPushButton::hover
+{
+border:0px;
+	
+	background-color: rgb(0, 134, 144);
+}
+QPushButton:pressed
+{
+border:1px solid rgb(0, 121, 131);
+background-color: rgb(179,250, 250);
+}</string>
+     </property>
+     <property name="text">
+      <string>PSV</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnCluch">
+     <property name="geometry">
+      <rect>
+       <x>26</x>
+       <y>80</y>
+       <width>105</width>
+       <height>33</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+                                        border-radius: 10px;
+                                       selection-background-color: darkgray;
+color: rgb(0, 0, 0);
+font: 10pt &quot;Comic Sans MS&quot;;
+
+	background-color: rgb(250, 250, 250);
+
+border-color: rgb(255, 85, 255);
+
+}
+
+QPushButton::hover
+{
+border:0px;
+	
+	background-color: rgb(0, 134, 144);
+}
+QPushButton:pressed
+{
+border:1px solid rgb(0, 121, 131);
+background-color: rgb(179,250, 250);
+}</string>
+     </property>
+     <property name="text">
+      <string>Clutch</string>
+     </property>
+    </widget>
    </widget>
-   <zorder>layoutWidget</zorder>
    <zorder>label</zorder>
+   <zorder>groupBox_14</zorder>
+   <zorder>groupBox_7</zorder>
+   <zorder>groupBox_15</zorder>
    <zorder>groupBox_5</zorder>
    <zorder>groupBox</zorder>
-   <zorder>layoutWidget</zorder>
    <zorder>label_4</zorder>
    <zorder>label_5</zorder>
-   <zorder>layoutWidget</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -2169,8 +2112,6 @@ border:1px solid rgb(0, 121, 131);
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
- <resources>
-  <include location="QTtester1/resorce.qrc"/>
- </resources>
+ <resources/>
  <connections/>
 </ui>
