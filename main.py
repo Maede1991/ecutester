@@ -17,7 +17,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.setupUi(self)
         self.Message = bytearray(32) #defining a variable with 32 bytes of data, if u want to change bits u need to use shift and | and & operators
         self.Message[0] = 0xFF
-        self.lineEditCTS.returnPressed.connect(lambda:self.text_changed("CTS"))
+        self.lineEditCTS.returnPressed.connect(lambda:self.text_changed("CTS"))#event active with enter key
         self.lineEditDo2S.returnPressed.connect(lambda:self.text_changed("Do2S"))
         self.lineEditFuelLevel.returnPressed.connect(lambda:self.text_changed("FuelLevel"))
         self.lineEditMAP.returnPressed.connect(lambda:self.text_changed("MAP"))
@@ -27,9 +27,18 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.lineEditRPM.returnPressed.connect(lambda:self.text_changed("RPM"))
         self.lineEditSPEED.returnPressed.connect(lambda:self.text_changed("SPEED"))
         self.lineEditTPS1.returnPressed.connect(lambda:self.text_changed("TPS1"))
+        self.lineEditTPS2.returnPressed.connect(lambda:self.text_changed("TPS2"))
         self.lineEditUo2S.returnPressed.connect(lambda:self.text_changed("Uo2S"))
         self.lineEditReserve1.returnPressed.connect(lambda:self.text_changed("Reserve1"))
         self.lineEditReserve2.returnPressed.connect(lambda:self.text_changed("Reserve2"))
+
+
+        self.verticalSliderCTS.valueChanged.connect(lambda:self.text_changed("CTS"))
+        self.verticalSliderFUELLEVEL.sliderMoved.connect(lambda:self.text_changed("FUELLEVEL"))
+
+
+
+
 
 
        # self.Message[1] = self.CreateByte(1, 0, 1, 0, 1, 0, 0, 1)#set 8 bits in one byte
@@ -48,50 +57,59 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
     def text_changed(self,event):
         if event=="CTS":
             CTSValue=self.lineEditCTS.text()
+            self.lineEditCTS.setText(str(self.verticalSliderCTS.value()))
             print(CTSValue)
 
         if event=="Do2S":
-            Do2SValue=self.lineEditCTS.text()
+            Do2SValue=self.lineEditDo2S.text()
             print(Do2SValue)    
 
         if event=="FuelLevel":
-            FuelLevelValue=self.lineEditCTS.text()
+            FuelLevelValue=self.lineEditFuelLevel.text()
             print(FuelLevelValue) 
 
         if event=="MAP":
-            MAPValue=self.lineEditCTS.text()
+            MAPValue=self.lineEditMAP.text()
             print(MAPValue)
 
         if event=="PVS1":
-            PVS1Value=self.lineEditCTS.text()
+            PVS1Value=self.lineEditPVS1.text()
             print(PVS1Value)    
 
         if event=="PVS2":
-            PVS2Value=self.lineEditCTS.text()
+            PVS2Value=self.lineEditPVS2.text()
             print(PVS2Value) 
 
         if event=="RPM":
-            RPMValue=self.lineEditCTS.text()
+            RPMValue=self.lineEditRPM.text()
             print(RPMValue)
 
         if event=="SPEED":
-            SPEEDValue=self.lineEditCTS.text()
+            SPEEDValue=self.lineEditSPEED.text()
             print(SPEEDValue)    
 
         if event=="TPS1":
-            TPS1Value=self.lineEditCTS.text()
+            TPS1Value=self.lineEditTPS1.text()
             print(TPS1Value) 
 
         if event=="Uo2S":
-            Uo2SValue=self.lineEditCTS.text()
+            Uo2SValue=self.lineEditUo2S.text()
             print(Uo2SValue)
 
+        if event=="TPS2":
+            TPS2Value=self.lineEditTPS2.text()
+            print(TPS2Value) 
+
+        if event=="MAT":
+            MATValue=self.lineEditMAT.text()
+            print(MATValue)
+
         if event=="Reserve1":
-            Reserve1Value=self.lineEditCTS.text()
+            Reserve1Value=self.lineEditReserve1.text()
             print(Reserve1Value)    
 
         if event=="Reserve2":
-            Reserve2Value=self.lineEditCTS.text()
+            Reserve2Value=self.lineEditReserve2.text()
             print(Reserve2Value)               
             
     
