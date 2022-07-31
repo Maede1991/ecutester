@@ -22,7 +22,7 @@
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>1285</width>
+      <width>1301</width>
       <height>911</height>
      </rect>
     </property>
@@ -327,13 +327,16 @@ border:0px;
 }</string>
       </property>
       <property name="text">
-       <string>None</string>
+       <string/>
       </property>
       <property name="echoMode">
        <enum>QLineEdit::Normal</enum>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>None</string>
       </property>
      </widget>
     </widget>
@@ -389,13 +392,16 @@ border:0px;
 }</string>
       </property>
       <property name="text">
-       <string>None</string>
+       <string/>
       </property>
       <property name="echoMode">
        <enum>QLineEdit::Normal</enum>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>None</string>
       </property>
      </widget>
      <widget class="QDial" name="dialSPEED">
@@ -495,13 +501,16 @@ border:0px;
 }</string>
       </property>
       <property name="text">
-       <string>None</string>
+       <string/>
       </property>
       <property name="echoMode">
        <enum>QLineEdit::Normal</enum>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>None</string>
       </property>
      </widget>
     </widget>
@@ -582,13 +591,16 @@ border:0px;
 }</string>
       </property>
       <property name="text">
-       <string>None</string>
+       <string/>
       </property>
       <property name="echoMode">
        <enum>QLineEdit::Normal</enum>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>None</string>
       </property>
      </widget>
     </widget>
@@ -669,13 +681,16 @@ border:0px;
 }</string>
       </property>
       <property name="text">
-       <string>None</string>
+       <string/>
       </property>
       <property name="echoMode">
        <enum>QLineEdit::Normal</enum>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>None</string>
       </property>
      </widget>
     </widget>
@@ -756,13 +771,16 @@ border:0px;
 }</string>
       </property>
       <property name="text">
-       <string>None</string>
+       <string/>
       </property>
       <property name="echoMode">
        <enum>QLineEdit::Normal</enum>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>None</string>
       </property>
      </widget>
     </widget>
@@ -843,13 +861,16 @@ border:0px;
 }</string>
       </property>
       <property name="text">
-       <string>None</string>
+       <string/>
       </property>
       <property name="echoMode">
        <enum>QLineEdit::Normal</enum>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>None</string>
       </property>
      </widget>
     </widget>
@@ -930,13 +951,16 @@ border:0px;
 }</string>
       </property>
       <property name="text">
-       <string>None</string>
+       <string/>
       </property>
       <property name="echoMode">
        <enum>QLineEdit::Normal</enum>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>None</string>
       </property>
      </widget>
     </widget>
@@ -1017,13 +1041,16 @@ border:0px;
 }</string>
       </property>
       <property name="text">
-       <string>None</string>
+       <string/>
       </property>
       <property name="echoMode">
        <enum>QLineEdit::Normal</enum>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>None</string>
       </property>
      </widget>
     </widget>
@@ -1104,13 +1131,16 @@ border:0px;
 }</string>
       </property>
       <property name="text">
-       <string>None</string>
+       <string/>
       </property>
       <property name="echoMode">
        <enum>QLineEdit::Normal</enum>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>None</string>
       </property>
      </widget>
     </widget>
@@ -1191,13 +1221,16 @@ border:0px;
 }</string>
       </property>
       <property name="text">
-       <string>None</string>
+       <string/>
       </property>
       <property name="echoMode">
        <enum>QLineEdit::Normal</enum>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>None</string>
       </property>
      </widget>
     </widget>
@@ -1278,13 +1311,16 @@ border:0px;
 }</string>
       </property>
       <property name="text">
-       <string>None</string>
+       <string/>
       </property>
       <property name="echoMode">
        <enum>QLineEdit::Normal</enum>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>None</string>
       </property>
      </widget>
     </widget>
@@ -1365,13 +1401,16 @@ border:0px;
 }</string>
       </property>
       <property name="text">
-       <string>None</string>
+       <string/>
       </property>
       <property name="echoMode">
        <enum>QLineEdit::Normal</enum>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>None</string>
       </property>
      </widget>
     </widget>
@@ -1452,13 +1491,16 @@ border:0px;
 }</string>
       </property>
       <property name="text">
-       <string>None</string>
+       <string/>
       </property>
       <property name="echoMode">
        <enum>QLineEdit::Normal</enum>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>None</string>
       </property>
      </widget>
     </widget>
