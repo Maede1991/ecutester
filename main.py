@@ -17,7 +17,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.setupUi(self)
         self.Message = bytearray(32) #defining a variable with 32 bytes of data, if u want to change bits u need to use shift and | and & operators
         self.Message[0] = 0xFF
-        self.lineEditCTS.text(self.text_changed)
+        self.lineEditCTS.returnPressed.connect(lambda:self.text_changed("cts"))
        # self.Message[1] = self.CreateByte(1, 0, 1, 0, 1, 0, 0, 1)#set 8 bits in one byte
         #self.DisEnable(False)
         self.btnConnect.clicked.connect(self.ConnectSerial)
@@ -31,9 +31,12 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         #     #self.comboBox.addItem(com[com.find('COM'):com.find('COM')+5])
         #     self.comboBoxCOM.addItem(str(this))
 
-    def text_changed(self):
+    def text_changed(self,event):
+        if event=="cts":
+            CTSValue=1
+            CTSValue=self.lineEditCTS.text()
+            print("t7u")
 
-        print("uiho")
 
 
 
