@@ -60,12 +60,116 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
     def text_changed(self,event):
         if event=="CTS0":
-            CTSValue0=self.verticalSliderCTS.setVisible(int(self.lineEditCTS.text()))
+            CTSValue0=self.verticalSliderCTS.setValue(int(self.lineEditCTS.text()))
             print(CTSValue0)
 
         if event=="CTS1":
            CTSValue1=self.lineEditCTS.setText(str(self.verticalSliderCTS.value()))
            print(CTSValue1)
+
+    def text_changed(self,event):
+        if event=="CTS0":
+            CTSValue0=self.verticalSliderCTS.setValue(int(self.lineEditCTS.text()))
+            print(CTSValue0)
+
+        if event=="CTS1":
+           CTSValue1=self.lineEditCTS.setText(str(self.verticalSliderCTS.value()))
+           print(CTSValue1)
+    def text_changed(self,event):
+        if event=="CTS0":
+            CTSValue0=self.verticalSliderCTS.setValue(int(self.lineEditCTS.text()))
+            print(CTSValue0)
+
+        if event=="CTS1":
+           CTSValue1=self.lineEditCTS.setText(str(self.verticalSliderCTS.value()))
+           print(CTSValue1)
+    def text_changed(self,event):
+        if event=="CTS0":
+            CTSValue0=self.verticalSliderCTS.setValue(int(self.lineEditCTS.text()))
+            print(CTSValue0)
+
+        if event=="CTS1":
+           CTSValue1=self.lineEditCTS.setText(str(self.verticalSliderCTS.value()))
+           print(CTSValue1)
+    def text_changed(self,event):
+        if event=="CTS0":
+            CTSValue0=self.verticalSliderCTS.setValue(int(self.lineEditCTS.text()))
+            print(CTSValue0)
+
+        if event=="CTS1":
+           CTSValue1=self.lineEditCTS.setText(str(self.verticalSliderCTS.value()))
+           print(CTSValue1)
+    def text_changed(self,event):
+        if event=="CTS0":
+            CTSValue0=self.verticalSliderCTS.setValue(int(self.lineEditCTS.text()))
+            print(CTSValue0)
+
+        if event=="CTS1":
+           CTSValue1=self.lineEditCTS.setText(str(self.verticalSliderCTS.value()))
+           print(CTSValue1)
+    def text_changed(self,event):
+        if event=="CTS0":
+            CTSValue0=self.verticalSliderCTS.setValue(int(self.lineEditCTS.text()))
+            print(CTSValue0)
+
+        if event=="CTS1":
+           CTSValue1=self.lineEditCTS.setText(str(self.verticalSliderCTS.value()))
+           print(CTSValue1)
+    def text_changed(self,event):
+        if event=="CTS0":
+            CTSValue0=self.verticalSliderCTS.setValue(int(self.lineEditCTS.text()))
+            print(CTSValue0)
+
+        if event=="CTS1":
+           CTSValue1=self.lineEditCTS.setText(str(self.verticalSliderCTS.value()))
+           print(CTSValue1)
+    def text_changed(self,event):
+        if event=="CTS0":
+            CTSValue0=self.verticalSliderCTS.setValue(int(self.lineEditCTS.text()))
+            print(CTSValue0)
+
+        if event=="CTS1":
+           CTSValue1=self.lineEditCTS.setText(str(self.verticalSliderCTS.value()))
+           print(CTSValue1)
+    def text_changed(self,event):
+        if event=="CTS0":
+            CTSValue0=self.verticalSliderCTS.setValue(int(self.lineEditCTS.text()))
+            print(CTSValue0)
+
+        if event=="CTS1":
+           CTSValue1=self.lineEditCTS.setText(str(self.verticalSliderCTS.value()))
+           print(CTSValue1)
+    def text_changed(self,event):
+        if event=="CTS0":
+            CTSValue0=self.verticalSliderCTS.setValue(int(self.lineEditCTS.text()))
+            print(CTSValue0)
+
+        if event=="CTS1":
+           CTSValue1=self.lineEditCTS.setText(str(self.verticalSliderCTS.value()))
+           print(CTSValue1)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         if event=="Do2S":
             Do2SValue=self.lineEditDo2S.text()
