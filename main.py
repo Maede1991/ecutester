@@ -19,24 +19,33 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.Message = bytearray(32) #defining a variable with 32 bytes of data, if u want to change bits u need to use shift and | and & operators
         self.Message[0] = 0xFF
         self.lineEditCTS.returnPressed.connect(lambda:self.text_changed("CTS0"))#event active with enter key
-        self.lineEditDo2S.returnPressed.connect(lambda:self.text_changed("Do2S"))
-        self.lineEditFuelLevel.returnPressed.connect(lambda:self.text_changed("FuelLevel"))
-        self.lineEditMAP.returnPressed.connect(lambda:self.text_changed("MAP"))
-        self.lineEditMAT.returnPressed.connect(lambda:self.text_changed("MAT"))
-        self.lineEditPVS1.returnPressed.connect(lambda:self.text_changed("PVS1"))
-        self.lineEditPVS2.returnPressed.connect(lambda:self.text_changed("PVS2"))
-        self.lineEditRPM.returnPressed.connect(lambda:self.text_changed("RPM"))
-        self.lineEditSPEED.returnPressed.connect(lambda:self.text_changed("SPEED"))
-        self.lineEditTPS1.returnPressed.connect(lambda:self.text_changed("TPS1"))
-        self.lineEditTPS2.returnPressed.connect(lambda:self.text_changed("TPS2"))
-        self.lineEditUo2S.returnPressed.connect(lambda:self.text_changed("Uo2S"))
-        self.lineEditReserve1.returnPressed.connect(lambda:self.text_changed("Reserve1"))
-        self.lineEditReserve2.returnPressed.connect(lambda:self.text_changed("Reserve2"))
+        self.lineEditDo2S.returnPressed.connect(lambda:self.text_changed("Do2S0"))
+        self.lineEditFuelLevel.returnPressed.connect(lambda:self.text_changed("FuelLevel0"))
+        self.lineEditMAP.returnPressed.connect(lambda:self.text_changed("MAP0"))
+        self.lineEditMAT.returnPressed.connect(lambda:self.text_changed("MAT0"))
+        self.lineEditPVS1.returnPressed.connect(lambda:self.text_changed("PVS10"))
+        self.lineEditPVS2.returnPressed.connect(lambda:self.text_changed("PVS20"))
+        self.lineEditRPM.returnPressed.connect(lambda:self.text_changed("RPM0"))
+        self.lineEditSPEED.returnPressed.connect(lambda:self.text_changed("SPEED0"))
+        self.lineEditTPS1.returnPressed.connect(lambda:self.text_changed("TPS10"))
+        self.lineEditTPS2.returnPressed.connect(lambda:self.text_changed("TPS20"))
+        self.lineEditUo2S.returnPressed.connect(lambda:self.text_changed("Uo2S0"))
+        self.lineEditReserve1.returnPressed.connect(lambda:self.text_changed("Reserve10"))
+        self.lineEditReserve2.returnPressed.connect(lambda:self.text_changed("Reserve20"))
 
 
         self.verticalSliderCTS.valueChanged.connect(lambda:self.text_changed("CTS1"))
-        self.verticalSliderFUELLEVEL.sliderMoved.connect(lambda:self.text_changed("FUELLEVEL"))
-
+        self.verticalSliderDO2S.valueChanged.connect(lambda:self.text_changed("Do2S1"))
+        self.verticalSliderFUELLEVEL.valueChanged.connect(lambda:self.text_changed("FUELLEVEL1"))
+        self.verticalSliderMAP.valueChanged.connect(lambda:self.text_changed("MAP0"))
+        self.verticalSliderMAP.valueChanged.connect(lambda:self.text_changed("MAT0"))
+        self.verticalSliderPVS1.valueChanged.connect(lambda:self.text_changed("PVS10"))
+        self.verticalSliderPVS2.valueChanged.connect(lambda:self.text_changed("PVS20"))
+        self.verticalSliderTPS1.valueChanged.connect(lambda:self.text_changed("TPS10"))
+        self.verticalSliderTPS2.valueChanged.connect(lambda:self.text_changed("TPS20"))
+        self.verticalSliderUO2S.valueChanged.connect(lambda:self.text_changed("Uo2S0"))
+        self.verticalSliderRESERVE1.valueChanged.connect(lambda:self.text_changed("Reserve10"))
+        self.verticalSliderRESERVE2.valueChanged.connect(lambda:self.text_changed("Reserve20"))
 
 
 
@@ -62,169 +71,140 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         if event=="CTS0":
            self.verticalSliderCTS.setValue(int(self.lineEditCTS.text()))
            CTSValue0=self.lineEditCTS.text()
-           print(str(CTSValue0))
+           print(CTSValue0)
 
         if event=="CTS1":
+           self.lineEditCTS.setText(str(self.verticalSliderCTS.value()))
+           CTSValue1=self.verticalSliderCTS.value()
+           print(CTSValue1)
+
+        if event=="Do2S0":
+           self.verticalSliderDO2S.setValue(int(self.lineEditDo2S.text()))
+           Do2S0=self.lineEditDo2S.text()
+           print(Do2S0)
+
+        if event=="Do2S1":
+           self.lineEditDo2S.setText(str(self.verticalSliderDO2S.value()))
+           Do2S1=self.verticalSliderDO2S.value()
+           print(Do2S1)
+
+
+        if event=="FuelLevel0":
+            self.verticalSliderFUELLEVEL.setValue(int(self.lineEditFuelLevel.text()))
+            FuelLevel0Value0=self.lineEditFuelLevel.text()
+            print(FuelLevel0Value0)
+
+        if event=="FuelLevel1":
+           self.lineEditCTS.setText(str(self.verticalSliderCTS.value()))
+           FuelLevel1Value1=self.verticalSliderFUELLEVEL.value()
+           print(FuelLevel1Value1)
+
+        if event=="MAP0":
+           self.verticalSliderCTS.setValue(int(self.lineEditCTS.text()))
+           CTSValue0=self.lineEditCTS.text()
+           print(CTSValue0)
+
+        if event=="MAP1":
            CTSValue1=self.lineEditCTS.setText(str(self.verticalSliderCTS.value()))
            print(CTSValue1)
 
-    def text_changed(self,event):
-        if event=="CTS0":
-            CTSValue0=self.verticalSliderCTS.setValue(int(self.lineEditCTS.text()))
-            print(CTSValue0)
+        if event=="PVS10":
+           self.verticalSliderPVS1.setValue(int(self.lineEditPVS1.text()))
+           PVS10Value0=self.lineEditPVS1.text()
+           print(PVS10Value0)
 
-        if event=="CTS1":
-           CTSValue1=self.lineEditCTS.setText(str(self.verticalSliderCTS.value()))
-           print(CTSValue1)
-    def text_changed(self,event):
-        if event=="CTS0":
-            CTSValue0=self.verticalSliderCTS.setValue(int(self.lineEditCTS.text()))
-            print(CTSValue0)
+        # if event=="PVS11":
+        #    CTSValue1=self.lineEditCTS.setText(str(self.verticalSliderCTS.value()))
+        #    print(CTSValue1)
 
-        if event=="CTS1":
-           CTSValue1=self.lineEditCTS.setText(str(self.verticalSliderCTS.value()))
-           print(CTSValue1)
-    def text_changed(self,event):
-        if event=="CTS0":
-            CTSValue0=self.verticalSliderCTS.setValue(int(self.lineEditCTS.text()))
-            print(CTSValue0)
+        if event=="PVS20":
+           self.verticalSliderPVS2.setValue(int(self.lineEditPVS2.text()))
+           PVS20Value0=self.lineEditPVS2.text()
+           print(PVS20Value0)
 
-        if event=="CTS1":
-           CTSValue1=self.lineEditCTS.setText(str(self.verticalSliderCTS.value()))
-           print(CTSValue1)
-    def text_changed(self,event):
-        if event=="CTS0":
-            CTSValue0=self.verticalSliderCTS.setValue(int(self.lineEditCTS.text()))
-            print(CTSValue0)
-
-        if event=="CTS1":
-           CTSValue1=self.lineEditCTS.setText(str(self.verticalSliderCTS.value()))
-           print(CTSValue1)
-    def text_changed(self,event):
-        if event=="CTS0":
-            CTSValue0=self.verticalSliderCTS.setValue(int(self.lineEditCTS.text()))
-            print(CTSValue0)
-
-        if event=="CTS1":
-           CTSValue1=self.lineEditCTS.setText(str(self.verticalSliderCTS.value()))
-           print(CTSValue1)
-    def text_changed(self,event):
-        if event=="CTS0":
-            CTSValue0=self.verticalSliderCTS.setValue(int(self.lineEditCTS.text()))
-            print(CTSValue0)
-
-        if event=="CTS1":
-           CTSValue1=self.lineEditCTS.setText(str(self.verticalSliderCTS.value()))
-           print(CTSValue1)
-    def text_changed(self,event):
-        if event=="CTS0":
-            CTSValue0=self.verticalSliderCTS.setValue(int(self.lineEditCTS.text()))
-            print(CTSValue0)
-
-        if event=="CTS1":
-           CTSValue1=self.lineEditCTS.setText(str(self.verticalSliderCTS.value()))
-           print(CTSValue1)
-    def text_changed(self,event):
-        if event=="CTS0":
-            CTSValue0=self.verticalSliderCTS.setValue(int(self.lineEditCTS.text()))
-            print(CTSValue0)
-
-        if event=="CTS1":
-           CTSValue1=self.lineEditCTS.setText(str(self.verticalSliderCTS.value()))
-           print(CTSValue1)
-    def text_changed(self,event):
-        if event=="CTS0":
-            CTSValue0=self.verticalSliderCTS.setValue(int(self.lineEditCTS.text()))
-            print(CTSValue0)
-
-        if event=="CTS1":
-           CTSValue1=self.lineEditCTS.setText(str(self.verticalSliderCTS.value()))
-           print(CTSValue1)
-    def text_changed(self,event):
-        if event=="CTS0":
-            CTSValue0=self.verticalSliderCTS.setValue(int(self.lineEditCTS.text()))
-            print(CTSValue0)
-
-        if event=="CTS1":
-           CTSValue1=self.lineEditCTS.setText(str(self.verticalSliderCTS.value()))
-           print(CTSValue1)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        if event=="Do2S":
-            Do2SValue=self.lineEditDo2S.text()
-            print(Do2SValue)    
-
-        if event=="FuelLevel":
-            FuelLevelValue=self.lineEditFuelLevel.text()
-            print(FuelLevelValue) 
-
-        if event=="MAP":
-            MAPValue=self.lineEditMAP.text()
-            print(MAPValue)
-
-        if event=="PVS1":
-            PVS1Value=self.lineEditPVS1.text()
-            print(PVS1Value)    
-
-        if event=="PVS2":
-            PVS2Value=self.lineEditPVS2.text()
-            print(PVS2Value) 
-
-        if event=="RPM":
-            RPMValue=self.lineEditRPM.text()
-            print(RPMValue)
-
-        if event=="SPEED":
-            SPEEDValue=self.lineEditSPEED.text()
-            print(SPEEDValue)    
-
-        if event=="TPS1":
-            TPS1Value=self.lineEditTPS1.text()
-            print(TPS1Value) 
-
-        if event=="Uo2S":
-            Uo2SValue=self.lineEditUo2S.text()
-            print(Uo2SValue)
-
-        if event=="TPS2":
-            TPS2Value=self.lineEditTPS2.text()
-            print(TPS2Value) 
-
-        if event=="MAT":
-            MATValue=self.lineEditMAT.text()
-            print(MATValue)
-
-        if event=="Reserve1":
-            Reserve1Value=self.lineEditReserve1.text()
-            print(Reserve1Value)    
-
-        if event=="Reserve2":
-            Reserve2Value=self.lineEditReserve2.text()
-            print(Reserve2Value)               
-            
+        # if event=="PVS21":
+        #    CTSValue1=self.lineEditCTS.setText(str(self.verticalSliderCTS.value()))
+        #    print(CTSValue1)
     
+        if event=="RPM0":
+           RPM0Value0=self.lineEditRPM.text()
+           print(RPM0Value0)
+
+        if event=="SPEED0":
+           SPEED0=self.lineEditSPEED.text()
+           print(SPEED0)
+
+        if event=="TPS10":
+           self.verticalSliderTPS1.setValue(int(self.lineEditTPS1.text()))
+           TPS10Value0=self.lineEditTPS1.text()
+           print(TPS10Value0)
+
+        # if event=="TPS11":
+        #    CTSValue1=self.lineEditCTS.setText(str(self.verticalSliderCTS.value()))
+        #    print(CTSValue1)
+    
+        if event=="Uo2S0":
+           self.verticalSliderUO2S.setValue(int(self.lineEditUo2S.text()))
+           CTSValue0=self.lineEditUo2S.text()
+           print(CTSValue0)
+
+        # if event=="Uo2S1":
+        #    CTSValue1=self.lineEditCTS.setText(str(self.verticalSliderCTS.value()))
+        #    print(CTSValue1)
+   
+        # if event=="TPS2":
+           self.verticalSliderCTS.setValue(int(self.lineEditCTS.text()))
+           CTSValue0=self.lineEditCTS.text()
+           print(CTSValue0)
+
+        # if event=="TPS2":
+        #    CTSValue1=self.lineEditCTS.setText(str(self.verticalSliderCTS.value()))
+        #    print(CTSValue1)
+
+        # if event=="MAT0":
+           self.verticalSliderCTS.setValue(int(self.lineEditCTS.text()))
+           CTSValue0=self.lineEditCTS.text()
+           print(CTSValue0)
+
+        # if event=="MAT1":
+        #     CTSValue0=self.verticalSliderCTS.setValue(int(self.lineEditCTS.text()))
+        #     print(CTSValue0)
+
+        # if event=="Reserve10":
+           self.verticalSliderCTS.setValue(int(self.lineEditCTS.text()))
+           CTSValue0=self.lineEditCTS.text()
+           print(CTSValue0)
+
+        # if event=="Reserve11":
+           self.verticalSliderCTS.setValue(int(self.lineEditCTS.text()))
+           CTSValue0=self.lineEditCTS.text()
+           print(CTSValue0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+   
             
 
 
