@@ -60,8 +60,9 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
     def text_changed(self,event):
         if event=="CTS0":
-            CTSValue0=self.verticalSliderCTS.setValue(int(self.lineEditCTS.text()))
-            print(CTSValue0)
+           self.verticalSliderCTS.setValue(int(self.lineEditCTS.text()))
+           CTSValue0=self.lineEditCTS.text()
+           print(str(CTSValue0))
 
         if event=="CTS1":
            CTSValue1=self.lineEditCTS.setText(str(self.verticalSliderCTS.value()))
