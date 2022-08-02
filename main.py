@@ -4,7 +4,8 @@ from PySide2 import QtWidgets
 from PySide2.QtCore import QFile
 from mainwindow import Ui_MainWindow
 from PySide2 import QtCore, QtWidgets, QtSerialPort
-import math
+import serial
+import serial.tools.list_ports
 
 
 
@@ -17,7 +18,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.setupUi(self)
         self.Message = bytearray(32) #defining a variable with 32 bytes of data, if u want to change bits u need to use shift and | and & operators
         self.Message[0] = 0xFF
-        self.lineEditCTS.returnPressed.connect(lambda:self.text_changed("CTS"))#event active with enter key
+        self.lineEditCTS.returnPressed.connect(lambda:self.text_changed("CTS0"))#event active with enter key
         self.lineEditDo2S.returnPressed.connect(lambda:self.text_changed("Do2S"))
         self.lineEditFuelLevel.returnPressed.connect(lambda:self.text_changed("FuelLevel"))
         self.lineEditMAP.returnPressed.connect(lambda:self.text_changed("MAP"))
@@ -33,7 +34,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.lineEditReserve2.returnPressed.connect(lambda:self.text_changed("Reserve2"))
 
 
-        self.verticalSliderCTS.valueChanged.connect(lambda:self.text_changed("CTS"))
+        self.verticalSliderCTS.valueChanged.connect(lambda:self.text_changed("CTS1"))
         self.verticalSliderFUELLEVEL.sliderMoved.connect(lambda:self.text_changed("FUELLEVEL"))
 
 
@@ -54,11 +55,17 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         #     #self.comboBox.addItem(com[com.find('COM'):com.find('COM')+5])
         #     self.comboBoxCOM.addItem(str(this))
 
+
+
+
     def text_changed(self,event):
-        if event=="CTS":
-            CTSValue=self.lineEditCTS.text()
-            self.lineEditCTS.setText(str(self.verticalSliderCTS.value()))
-            print(CTSValue)
+        if event=="CTS0":
+            CTSValue0=self.verticalSliderCTS.setVisible(int(self.lineEditCTS.text()))
+            print(CTSValue0)
+
+        if event=="CTS1":
+           CTSValue1=self.lineEditCTS.setText(str(self.verticalSliderCTS.value()))
+           print(CTSValue1)
 
         if event=="Do2S":
             Do2SValue=self.lineEditDo2S.text()
