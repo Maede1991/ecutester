@@ -39,21 +39,21 @@ class Ui_MainWindow(object):
         self.comboBoxCOM = QComboBox(self.groupBox)
         self.comboBoxCOM.addItem("")
         self.comboBoxCOM.setObjectName(u"comboBoxCOM")
-        self.comboBoxCOM.setGeometry(QRect(63, 43, 66, 24))
-        self.comboBoxCOM.setStyleSheet(u" font: 11pt \"MS Shell Dlg 2\";\n"
+        self.comboBoxCOM.setGeometry(QRect(63, 43, 241, 24))
+        self.comboBoxCOM.setStyleSheet(u" font: 8pt \"MS Shell Dlg 2\";\n"
 "color: rgb(255, 255, 255);\n"
 "\n"
 "background-color: rgb(0, 41, 58);")
         self.comboBoxCOM.setEditable(True)
         self.label_3 = QLabel(self.groupBox)
         self.label_3.setObjectName(u"label_3")
-        self.label_3.setGeometry(QRect(251, 41, 83, 26))
+        self.label_3.setGeometry(QRect(310, 41, 83, 26))
         self.comboBoxBuadRate = QComboBox(self.groupBox)
         self.comboBoxBuadRate.addItem("")
         self.comboBoxBuadRate.addItem("")
         self.comboBoxBuadRate.addItem("")
         self.comboBoxBuadRate.setObjectName(u"comboBoxBuadRate")
-        self.comboBoxBuadRate.setGeometry(QRect(340, 43, 80, 24))
+        self.comboBoxBuadRate.setGeometry(QRect(399, 43, 80, 24))
         self.comboBoxBuadRate.setStyleSheet(u" font: 11pt \"MS Shell Dlg 2\";\n"
 "color: rgb(255, 255, 255);\n"
 "\n"
